@@ -99,13 +99,13 @@ $holidays = [
     <tr>
         <td style='text-align:left'>
         <a href="">前年</a>
-        <a href="calendar.php?year=<?=$prevYear;?>&month=<?=$prevMonth;?>">上一個月</a>
+        <a href="index.php?year=<?=$prevYear;?>&month=<?=$prevMonth;?>">上一個月</a>
         </td>
         <td>
         <?php echo date("{$month}月");?>
         </td>
         <td style='text-align:right'>
-        <a href="calendar.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>">下一個月</a>
+        <a href="index.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>">下一個月</a>
         <a href="">明年</a>
         </td>
     </tr>
