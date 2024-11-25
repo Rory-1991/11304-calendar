@@ -6,7 +6,7 @@
     <title>萬年曆</title>
 </head>
 <body>
-<h1>萬年曆</h1>
+
 <style>
     table{
         border-collapse:collapse;
@@ -49,12 +49,6 @@
         margin-top: 20px;
     }
 </style>
-
-<ul>
-    <li>有上一個月下一個月的按鈕</li>
-    <li>萬年曆都在同一個頁面同一個檔案</li>
-    <li>有前年和來年的按鈕</li>
-</ul>
 
 <?php
 
@@ -122,15 +116,15 @@ $nextYear = $year + 1;     // 明年
     <table style="width:100%">
         <tr>
             <td style='text-align:left'>
-                <a href="test.php?year=<?=$prevPrevYear;?>&month=<?=$month;?>">前年</a>
-                <a href="test.php?year=<?=$prevYear;?>&month=<?=$prevMonth;?>">上一個月</a>
+                <a href="test2.php?year=<?=$prevPrevYear;?>&month=<?=$month;?>">前年</a>
+                <a href="test2.php?year=<?=$prevYear;?>&month=<?=$prevMonth;?>">上一個月</a>
             </td>
             <td>
                 <?php echo date("{$month}月"); ?>
             </td>
             <td style='text-align:right'>
-                <a href="test.php?year=<?=$nextYear;?>&month=<?=$month;?>">明年</a>
-                <a href="test.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>">下一個月</a>
+                <a href="test2.php?year=<?=$nextYear;?>&month=<?=$month;?>">明年</a>
+                <a href="test2.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>">下一個月</a>
             </td>
         </tr>
     </table>
@@ -138,7 +132,7 @@ $nextYear = $year + 1;     // 明年
 
 <!-- 用戶輸入年/月查詢的表單 -->
 <div class="form-container">
-    <form action="test.php" method="get">
+    <form action="test2.php" method="get">
         <label for="year">年份：</label>
         <input type="number" id="year" name="year" value="<?= $year ?>" min="1900" max="9999" required>
         <label for="month">月份：</label>
