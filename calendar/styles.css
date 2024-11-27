@@ -1,0 +1,172 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/free-photo/petal-texture-background-coral-pink-blog-banner_53876-127346.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #823333;
+}
+
+.calendar-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(209, 195, 195, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ebae85;
+
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.controls button {
+    background: #e7ced7;
+    color: #817546;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background: #edeea9d4;
+    color: #e7bebe;
+    transform: scale(1.1);
+}
+
+input[type="number"],
+input[type="range"] {
+    border: 2px solid #ebe8dc;
+    border-radius: 5px;
+    padding: 5px;
+    background: #daabab;
+    color: #e3a167;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#yearRange {
+    width: 100%;
+}
+
+#rangeValue {
+    font-weight: bold;
+    color: #b98043;
+}
+
+.range-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #9e6b38;
+    font-size: 1em;
+}
+
+.range-selector label {
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.range-selector input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #f1e3a4, #eb9595);
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.range-selector input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #eeace5;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.range-selector input[type="range"]:hover {
+    opacity: 1;
+}
+
+.range-selector input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.range-selector span {
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    color: #c47b3f;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+tbody td:not(:empty) {
+    background: rgba(224, 189, 189, 0.1);
+    border-radius: 5px;
+}
+
+tbody td:hover {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #c17c52;
+    font-size: 1em;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #weatherIcon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
